@@ -1,0 +1,18 @@
+#Get list of printers
+wmic printer get name,default
+
+#Get name of default printer
+wmic printer where default='TRUE' get name
+
+#Set the default printer
+wmic printer where name='printername' call setdefaultprinter
+
+
+#List jobs in print Q
+wmic printjob get
+
+#Cancel Print Job
+wmic printjob where jobid=<jobnumber> delete
+
+
+
