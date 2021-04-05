@@ -15,4 +15,4 @@ wmic printjob get
 wmic printjob where jobid=<jobnumber> delete
 
 
-stand alone like a man has to
+Can you stand alone like a man has to?
